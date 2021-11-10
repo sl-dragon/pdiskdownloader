@@ -1,5 +1,5 @@
 
-# (c) @AbirHasan2005 | X-Noid
+# (c) @AbirHasan2005 | X-Noid | PYROGRAMMERS
 
 import traceback, datetime, asyncio, string, random, time, os, aiofiles, aiofiles.os
 from database.access import clinton
