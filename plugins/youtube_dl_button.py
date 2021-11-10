@@ -21,7 +21,7 @@ if bool(os.environ.get("WEBHOOK", False)):
 else:
     from config import Config
 # the Strings used for this "thing"
-from translation import Translation
+from scripts import Scripted
 from plugins.custom_thumbnail import *
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyrogram.types import InputMediaPhoto
