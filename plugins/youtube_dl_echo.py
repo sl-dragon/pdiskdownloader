@@ -14,7 +14,7 @@ else:
     from config import Config
 # the Strings used for this "thing"
 from database.adduser import AddUser
-from scripts import Translation
+from scripts import Scripted
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyrogram import filters
 from pyrogram import Client as Clinton
@@ -265,7 +265,7 @@ async def echo(bot, update):
         await imog.delete(True)
         await bot.send_message(
             chat_id=update.chat.id,
-            text=Translation.FORMAT_SELECTION,
+            text=scripts.FORMAT_SELECTION,
             reply_markup=reply_markup,
             parse_mode="html",
             reply_to_message_id=update.message_id
