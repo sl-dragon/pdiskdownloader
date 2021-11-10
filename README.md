@@ -1,7 +1,9 @@
 ## Uploader X  Bot > 🛑 Don't Use This Branch Build in Progress 🥴
 ---
 
-Telegram RoBot to Upload Links.
+Telegram Bot to download Pdisk Links. 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 **Features**:
 
