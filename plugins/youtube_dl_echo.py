@@ -14,7 +14,7 @@ else:
     from config import Config
 # the Strings used for this "thing"
 from database.adduser import AddUser
-from translation import Translation
+from scripts import Translation
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from pyrogram import filters
 from pyrogram import Client as Clinton
@@ -114,10 +114,10 @@ async def echo(bot, update):
         # logger.warn("Status : FAIL", exc.returncode, exc.output)
         error_message = e_response.replace("please report this issue on https://yt-dl.org/bug . Make sure you are using the latest version; see  https://yt-dl.org/update  on how to update. Be sure to call youtube-dl with the --verbose flag and include its complete output.", "")
         if "This video is only available for registered users." in error_message:
-            error_message += Translation.SET_CUSTOM_USERNAME_PASSWORD
+            error_message += scripts.SET_CUSTOM_USERNAME_PASSWORD
         await bot.send_message(
             chat_id=update.chat.id,
-            text=Translation.NO_VOID_FORMAT_FOUND.format(str(error_message)),
+            text=scripts.NO_VOID_FORMAT_FOUND.format(str(error_message)),
             reply_to_message_id=update.message_id,
             parse_mode="html",
             disable_web_page_preview=True
@@ -239,7 +239,7 @@ async def echo(bot, update):
         await imog.delete(True)
         await bot.send_message(
             chat_id=update.chat.id,
-            text=Translation.FORMAT_SELECTION + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
+            text=scripts.FORMAT_SELECTION + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
             reply_markup=reply_markup,
             parse_mode="html",
             reply_to_message_id=update.message_id
