@@ -1,9 +1,7 @@
 class Translation(object):
     START_TEXT = """Hi {},
 I'm PYROGRAMMERS PDISK DOWNLOADER!
-You can download PDISK link, Using this bot!
-
-Hit /help for more details!"""
+You can download PDISK link, Using this bot!"""
     FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
@@ -25,7 +23,7 @@ URL | filename | username | password"""
    DFile  - Give File (video) as file with Screenshots
    Video  - Give File as video without Screenshots
    File   - Give File without Screenshots
-Looking For Source Code? It will be public When 100 Subscribers will be completed on my youtube channel.
+Looking For Source Code? \nIt will be public When 100 Subscribers will be completed on my youtube channel.
 If bot didn't respond, contact @pyrogrammerschat"""
     REPLY_TO_MEDIA_ALBUM_TO_GEN_THUMB = "Reply /generatecustomthumbnail to a media album, to generate custom thumbail"
     ERR_ONLY_TWO_MEDIA_IN_ALBUM = """Media Album should contain only two photos. Please re-send the media album, and then try again, or send only two photos in an album."
