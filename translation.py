@@ -2,9 +2,8 @@ class Translation(object):
     START_TEXT = """Hi {},
 I'm PYROGRAMMERS PDISK DOWNLOADER!
 You can download PDISK link, Using this bot!"""
-    FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
-    SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
-URL | filename | username | password"""
+    FORMAT_SELECTION = "Select the desired format: <a href='{}'</a> \nFor custom thumbnail, send photo before tapping on any of the below buttons.\nUse /deletethumbnail to delete the auto-generated thumbnail."
+    SET_CUSTOM_USERNAME_PASSWORD = """"""
     DOWNLOAD_START = "📥Downloading... Pdisk link! \nUntill then please keep patience and don't spam."
     UPLOAD_START = "📤Uploading... to telegram!"
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
