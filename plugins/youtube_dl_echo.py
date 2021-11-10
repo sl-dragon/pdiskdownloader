@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K | X-Noid | @DC4_WARRIOR
+
 
 # the logging things
 import logging
@@ -33,7 +31,7 @@ from pyrogram.errors import UserNotParticipant
 async def echo(bot, update):
     await AddUser(bot, update)
 
-    imog = await update.reply_text("Processing...⚡", reply_to_message_id=update.message_id)
+    imog = await update.reply_text("Processing...", reply_to_message_id=update.message_id)
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
