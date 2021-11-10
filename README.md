@@ -7,7 +7,7 @@ Telegram RoBot to Upload Links.
 
 👉 Upload [YouTube-dl Supported Links](https://ytdl-org.github.io/youtube-dl/supportedsites.html) to Telegram.
 
-👉 Upload HTTP/HTTPS as File/Video to Telegram.
+👉 Upload PDisk as File/Video to Telegram.
 
 👉 Upload zee5, sony.live, voot and much more 😋
 
