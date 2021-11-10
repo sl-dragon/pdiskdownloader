@@ -56,7 +56,7 @@ async def start(bot, update):
                     ),
                     InlineKeyboardButton("Group", url="https://t.me/pyrogrammerschat"),
                 ],
-                [InlineKeyboardButton("YOUTUBE CHANNEL ▶️", url="https://YOUTUBE.COM/")],
+                [InlineKeyboardButton("YOUTUBE CHANNEL ▶️", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")],
             ]
         ),
         reply_to_message_id=update.message_id
