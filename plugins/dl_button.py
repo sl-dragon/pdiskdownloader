@@ -21,7 +21,7 @@ if bool(os.environ.get("WEBHOOK", False)):
 else:
     from config import Config
 # the Strings used for this "thing"
-from translation import Translation
+from scripts import scripted
 from plugins.custom_thumbnail import *
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from helper_funcs.display_progress import progress_for_pyrogram, humanbytes, TimeFormatter
@@ -70,10 +70,10 @@ async def ddl_call_back(bot, update):
                 youtube_dl_url = youtube_dl_url[o:o + l]
     user = await bot.get_me()
     mention = user["mention"]
-    description = Translation.CUSTOM_CAPTION_UL_FILE.format(mention)
+    description = scripts.CUSTOM_CAPTION_UL_FILE.format(mention)
     start = datetime.now()
     await bot.edit_message_text(
-        text=Translation.DOWNLOAD_START,
+        text=scripts.DOWNLOAD_START,
         chat_id=update.message.chat.id,
         message_id=update.message.message_id
     )
@@ -96,7 +96,7 @@ async def ddl_call_back(bot, update):
             )
         except asyncio.TimeOutError:
             await bot.edit_message_text(
-                text=Translation.SLOW_URL_DECED,
+                text=scripts.SLOW_URL_DECED,
                 chat_id=update.message.chat.id,
                 message_id=update.message.message_id
             )
@@ -104,7 +104,7 @@ async def ddl_call_back(bot, update):
     if os.path.exists(download_directory):
         end_one = datetime.now()
         await bot.edit_message_text(
-            text=Translation.UPLOAD_START,
+            text=scripts.UPLOAD_START,
             chat_id=update.message.chat.id,
             message_id=update.message.message_id
         )
@@ -118,7 +118,7 @@ async def ddl_call_back(bot, update):
         if file_size > Config.TG_MAX_FILE_SIZE:
             await bot.edit_message_text(
                 chat_id=update.message.chat.id,
-                text=Translation.RCHD_TG_API_LIMIT,
+                text=scripts.RCHD_TG_API_LIMIT,
                 message_id=update.message.message_id
             )
         else:
@@ -137,7 +137,7 @@ async def ddl_call_back(bot, update):
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
-                        Translation.UPLOAD_START,
+                        scripts.UPLOAD_START,
                         update.message,
                         start_time
                     )
@@ -152,7 +152,7 @@ async def ddl_call_back(bot, update):
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
-                        Translation.UPLOAD_START,
+                        scripts.UPLOAD_START,
                         update.message,
                         start_time
                     )
@@ -169,7 +169,7 @@ async def ddl_call_back(bot, update):
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
-                        Translation.UPLOAD_START,
+                        scripts.UPLOAD_START,
                         update.message,
                         start_time
                     )
@@ -189,7 +189,7 @@ async def ddl_call_back(bot, update):
                     reply_to_message_id=update.message.reply_to_message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
-                        Translation.UPLOAD_START,
+                        scripts.UPLOAD_START,
                         update.message,
                         start_time
                     )
@@ -205,14 +205,14 @@ async def ddl_call_back(bot, update):
             time_taken_for_download = (end_one - start).seconds
             time_taken_for_upload = (end_two - end_one).seconds
             await bot.edit_message_text(
-                text=Translation.AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS.format(time_taken_for_download, time_taken_for_upload),
+                text=scripts.AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS.format(time_taken_for_download, time_taken_for_upload),
                 chat_id=update.message.chat.id,
                 message_id=update.message.message_id,
                 disable_web_page_preview=True
             )
     else:
         await bot.edit_message_text(
-            text=Translation.NO_VOID_FORMAT_FOUND.format("Incorrect Link"),
+            text=scripts.NO_VOID_FORMAT_FOUND.format("Incorrect Link"),
             chat_id=update.message.chat.id,
             message_id=update.message.message_id,
             disable_web_page_preview=True
