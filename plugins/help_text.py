@@ -50,13 +50,13 @@ async def start(bot, update):
         text=Translation.START_TEXT.format(update.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [
-                [
+               [
                     InlineKeyboardButton(
-                        "Source code ⚡", url="https://github.com/Clinton-Abraham/UPLOADER-BOT"
+                        "Updates channel", url="https://t.me/pyrogrammers"
                     ),
-                    InlineKeyboardButton("Project Channel 👨🏻‍💻", url="https://t.me/Space_X_bots"),
+                    InlineKeyboardButton("Group", url="https://t.me/pyrogrammerschat"),
                 ],
-                [InlineKeyboardButton("Developer 👨‍⚖️", url="https://t.me/clinton_abraham_bot")],
+                [InlineKeyboardButton("YOUTUBE CHANNEL ▶️", url="https://YOUTUBE.COM/")],
             ]
         ),
         reply_to_message_id=update.message_id
