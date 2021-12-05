@@ -36,6 +36,3 @@ async def meganz(_, message):
     await msg.delete()
     os.remove(file)
 
-
-bot.start()
-idle()
