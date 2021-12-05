@@ -5,6 +5,7 @@ numpy
 Pillow
 pyrogram
 requests
+mega.py
 tgcrypto
 yt-dlp
 olefile
