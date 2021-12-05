@@ -1,6 +1,6 @@
 import os
 import logging
-from pyrogram import filters, Client, idle
+from pyrogram import filters, Client as Clinton , idle
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from mega import Mega
 from sample_config import Config
