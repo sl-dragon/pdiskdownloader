@@ -20,7 +20,7 @@ bot = Client(
    bot_token=Config.TG_BOT_TOKEN,
 )
 # mega download
-@bot.on_message(filters.regex(pattern="https://mega.nz/") & filters.private)
+@Clinton.on_message(filters.regex(pattern="https://mega.nz/") & filters.private)
 async def meganz(_, message):
     input = message.text
     user = message.from_user.mention
