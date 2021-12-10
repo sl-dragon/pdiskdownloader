@@ -1,11 +1,11 @@
 class Translation(object):
     START_TEXT = """Hi {},
-I'm PYROGRAMMERS PDISK DOWNLOADER!
-You can download PDISK link, Using this bot!"""
+I'm PYROGRAMMERS AIO DOWNLOADER!
+Using this bot you can download about all links on Telegram!"""
     FORMAT_SELECTION = "Select the desired format: <a href='{}'</a> \nFor custom thumbnail, send photo before tapping on any of the below buttons.\nUse /deletethumbnail to delete the auto-generated thumbnail."
     SET_CUSTOM_USERNAME_PASSWORD = """"""
-    DOWNLOAD_START = "📥Downloading... Pdisk link! \nUntill then please keep patience and don't spam."
-    UPLOAD_START = "📤Uploading... to telegram!"
+    DOWNLOAD_START = "📥Downloading... link! \nUntill then please keep patience and don't spam."
+    UPLOAD_START = "📤Uploading... your link to telegram!"
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "Thanks for using @pdiskdownloader_bot\n\n<b>Join : @pyrogrammers</b>"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds.\nUploaded in {} seconds.\n\n@pdiskdownloader_bot"
@@ -15,15 +15,14 @@ You can download PDISK link, Using this bot!"""
     NO_VOID_FORMAT_FOUND = "ERROR...\n<b>YouTubeDL</b> said: {}"
     HELP_USER = """How to Use Me? Follow These steps!
     
-1. Send url (http://Pdisk.com/link | New Filename.mp4).
+1. Send url (httos://myvideourl.com/video | New Filename.mp4).
 2. Send Image As Custom Thumbnail (Optional).
 3. Select the button.
    SVideo - Give File as video with Screenshots
    DFile  - Give File (video) as file with Screenshots
    Video  - Give File as video without Screenshots
    File   - Give File without Screenshots
-Looking For Source Code? \nIt will be public When 100 Subscribers will be completed on my youtube channel.
-If bot didn't respond, contact @pyrogrammerschat"""
+Looking For Source Code? \nIt will be public When 300 Subscribers will be completed on my youtube channel."""
     REPLY_TO_MEDIA_ALBUM_TO_GEN_THUMB = "Reply /generatecustomthumbnail to a media album, to generate custom thumbail"
     ERR_ONLY_TWO_MEDIA_IN_ALBUM = """Media Album should contain only two photos. Please re-send the media album, and then try again, or send only two photos in an album."
 You can use /rename command after receiving file to rename it with custom thumbnail support.
