@@ -1,6 +1,6 @@
 class Translation(object):
     START_TEXT = """Hi {},
-I'm PYROGRAMMERS AIO DOWNLOADER!
+I'm PYROGRAMMERS URL uploader!
 Using this bot you can download about all links on Telegram!"""
     FORMAT_SELECTION = "Select the desired format: <a href='{}'</a> \nFor custom thumbnail, send photo before tapping on any of the below buttons.\nUse /deletethumbnail to delete the auto-generated thumbnail."
     SET_CUSTOM_USERNAME_PASSWORD = """"""
